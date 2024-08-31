@@ -307,7 +307,7 @@ body {
         }
     
     .img_cont a img {
-        margin-left: 30px;
+        margin-left: 12.5vw;
         width: 260px;
         height: 350px;
         border-radius: 10px;
@@ -318,7 +318,7 @@ body {
     }    
     
     .card img {
-        margin-left: 30px ;
+        margin-left:12.5vw ;
         width: 260px;
         height: 350px;
         border-radius: 10px;
@@ -338,7 +338,7 @@ body {
 
     }
     .card div {
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
 
