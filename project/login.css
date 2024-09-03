@@ -2,39 +2,30 @@
     margin: 0px;
     padding: 0px;
 }
-header{
-    height: 50%;
-}
 body{
-    width: 100%;
-    height: 100%;
-    margin-top: 6%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image:url('https://img.freepik.com/free-vector/around-world-watercolor-illustration_53876-34775.jpg?size=626&ext=jpg&ga=GA1.1.107694881.1686996804&semt=ais');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    border-radius: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .main{
-    width: 430px;
-    height: 660px;
-    align-items: center;
-    margin-top: 4px;
+    top: 5vh;
+    margin: auto auto;
+    position:relative;
+    width: 32vw;
+    height: 90vh;
     box-shadow: 0px 0px 50px 2px #5f5e5e;
-    border-radius:1%;
+    border-radius:10px;
 }
-.main>image{
-    border-radius: 120px;
-    width: 100%;
-    height: 200px;
+.main img{
+    width: 32vw;
+    height: 30vh;
+    border-radius: 10px;
 }
 .submain{
     align-items: start;
     margin: auto;
-    height: 430px;
+    height: auto;
     text-align: start;
     background-color: hsl(0, 2%, 84%);
     border-radius:20px;
@@ -45,20 +36,9 @@ body{
     font-size: 27px;
     font-weight: 600;  
     margin-left: 20px; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.submain>.pan::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    background-color: #beb9b9;
-    border-radius: 25px;
-    margin-left: 5px;
-}
-.submain .row1 {
+
+ .row1 {
     position: relative;
     height: 50px;
     width: 90%;
@@ -66,29 +46,28 @@ body{
     margin-left: 20px;
 
 }
-.check .item{
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.check .item a{
-    text-decoration-line: none;
-    color:#e82084;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.item{
+margin-left: 25px;
+width: 25vw;
+ display: flex;
+ justify-content: space-between;
 }
 .item a{
-    margin-left: 130px;
+    text-decoration-line: none;
+    color:#e82084;
 }
+
 .item>input{
     margin-left: 20px;
 }
 .row1 input {
+    padding-left: 5px;
     position: absolute;
     height: 25px;
     width: 90%;
     border: none;
     outline: none;
     font-size: 16px;
-
     border-bottom: 2px solid #ccc;
     border-top: 2px solid transparent;
     transition: all 0.2s ease;
@@ -103,48 +82,63 @@ body{
     position: relative;
     font-size: 20px;
 }
-.uil uil-eye-slash showHidePw{
-    margin-left: 100px;
-}
-.img{
-    width: 430px;
-    height: 220px;
-    border-radius: 20px
-;
-}
-.main>image{
-    border-radius: 80px;
-    height: 50px;
-}
-.but>button{
-    padding-left: 100px;
-    padding-right: 100px;
+.but{
     margin-top: 30px;
-    margin-left: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 40px;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+}
+.but button{
     border-radius: 5px;
     background-color: #898787;
-    border: none;
     color: white;
-    width: 85%;
+    border: none;
+    width: 28vw;
     
 }
 .pa{
-    margin-top: 30px;
-    align-items: center;
-    text-align: center;
+   display: flex;
+   margin-top: 20px;
+   justify-content: center;
 }
 .pa a{
+    margin-left: 5px;
     text-decoration-line: none;
     color: #e82084;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.row1>input{
-    padding-left: 20px;
+  
 }
 input{
     border: none;
     text-decoration: none;
+}
+
+@media (min-width:270px) and (max-width:420px) {
+
+body{
+    background-repeat: no-repeat;
+    background-size: 200vh;
+}
+    .main{
+    height: 80vh;
+    width: 80vw;
+    background-color: whitesmoke;
+    opacity: .9;   
+}
+.main img{
+width: 80vw;
+}
+
+ .row1 {
+    height: 30px;
+    width: 80%;
+}
+
+.item{
+margin-top: 25px;
+width:90%;
+}
+.but button{
+    width: 70vw;
+    
+}
 }
