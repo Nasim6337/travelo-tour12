@@ -140,6 +140,8 @@ body {
 }
 
 .img_cont {
+    transition: 1s;
+    box-shadow: rgba(224, 243, 51, 0.25) 0px 30px 60px -12px inset, rgba(216, 221, 166, 0.3) 0px 18px 36px -18px inset;
     margin: 10px 10px;
     display: flex;
     flex-direction: column;
@@ -149,11 +151,10 @@ body {
 .img_cont a img {
     width: 310px;
     height: 450px;
-    transition: 1s;
     position: relative;
 }
 
-.img_cont a img:hover {
+.img_cont:hover {
     transform: scale(1.06);
 }
 
@@ -175,6 +176,7 @@ body {
 }
 
 .card {
+     box-shadow: rgb(24, 207, 137) 2px 2px 3px, rgba(56, 28, 184, 0.24) 2px 2px 2px;
     width: 350px;
     height: 500px;
     border-radius: 30px;
