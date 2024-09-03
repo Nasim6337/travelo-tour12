@@ -318,6 +318,9 @@ body {
         flex-direction: column;
         height: 1120px;        
     }    
+    .card{
+        box-shadow:none;
+    }
     
     .card img {
         margin-left:16vw ;
