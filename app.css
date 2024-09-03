@@ -140,19 +140,22 @@ body {
 }
 
 .img_cont {
-    transition: 1s;
     box-shadow: rgba(224, 243, 51, 0.25) 0px 30px 60px -12px inset, rgba(216, 221, 166, 0.3) 0px 18px 36px -18px inset;
-    margin: 10px 10px;
+    margin: auto auto;
     display: flex;
     flex-direction: column;
+    transition: 1s;
+    border-radius: 15px;
 
 }
 
 .img_cont a img {
+    border-radius: 15px;
     width: 310px;
     height: 450px;
     position: relative;
 }
+
 
 .img_cont:hover {
     transform: scale(1.06);
@@ -176,9 +179,12 @@ body {
 }
 
 .card {
-     box-shadow: rgb(24, 207, 137) 2px 2px 3px, rgba(56, 28, 184, 0.24) 2px 2px 2px;
-    width: 350px;
-    height: 500px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(224, 243, 51, 0.25) 0px 30px 60px -12px inset, rgba(216, 221, 166, 0.3) 0px 18px 36px -18px inset;
+    width: 420px;
+    height: 550px;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.4s;
@@ -188,8 +194,8 @@ body {
 
 .card div {
     position: absolute;
-    top: 20px;
-    margin-left: 20px;
+    top: 40px;
+    left: 50px;
     color: rgba(216, 221, 187, 0.959);
 
 
@@ -199,8 +205,6 @@ body {
     width: 350px;
     height: 500px;
     border-radius: 30px;
-    z-index: -1;
-
 }
 
 .services {
@@ -302,33 +306,45 @@ body {
         font-size: 20px;
     }
 
-    .tour_imgs {
-        height: 1750px;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(1, 1fr);
+   .tour_imgs {
+        height: 1790px;
+     display: flex;
+     flex-direction: column;
         }
+
+    .img_cont{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     
-    .img_cont a img {
-        margin-left: 13vw;
+    
+  .img_cont a img {
+        margin-top: 20px;
+        margin-left: 16vw;
         width: 260px;
         height: 350px;
         border-radius: 10px;
     }
-    .offer {
+      
+.offer {
         flex-direction: column;
-        height: 1120px;        
+        height: 1280px;      
     }    
+
     .card{
-        box-shadow:none;
+
+        box-shadow: rgba(224, 243, 51, 0.25) 0px 30px 60px -12px inset, rgba(216, 221, 166, 0.3) 0px 18px 36px -18px inset;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        width: 98%;
+        height: 450px;
     }
     
     .card img {
-        margin-left:16vw ;
         width: 260px;
         height: 350px;
         border-radius: 10px;
     }
-    
     .services {
         position: relative;
         top: -155px;
@@ -343,7 +359,7 @@ body {
 
     }
     .card div {
-        margin-left: 20vw;
+        margin-left: 0vw;
     }
 
 
