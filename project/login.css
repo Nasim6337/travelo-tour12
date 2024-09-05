@@ -2,114 +2,122 @@
     margin: 0px;
     padding: 0px;
 }
+header{
+    height: 50%;
+}
 body{
+  
     background-image:url('https://img.freepik.com/free-vector/around-world-watercolor-illustration_53876-34775.jpg?size=626&ext=jpg&ga=GA1.1.107694881.1686996804&semt=ais');
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .main{
+    position:relative;
     top: 5vh;
     margin: auto auto;
-    position:relative;
-    width: 32vw;
-    height: 90vh;
+    width: 29.3vw;
+    height: 80vh;
+    margin-top: 4px;
     box-shadow: 0px 0px 50px 2px #5f5e5e;
-    border-radius:10px;
+    border-radius:1%;
 }
-.main img{
-    width: 32vw;
-    height: 30vh;
-    border-radius: 10px;
+.main>image{
+    border-radius: 120px;
+    height: 210px;
 }
 .submain{
     align-items: start;
     margin: auto;
-    height: auto;
+    height: 430px;
     text-align: start;
     background-color: hsl(0, 2%, 84%);
-    border-radius:20px;
     background-color: transparent;
 }
 .pan{
     position: relative;
     font-size: 27px;
     font-weight: 600;  
-    margin-left: 20px; 
+    margin-left: 28px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
- .row1 {
-    position: relative;
-    height: 50px;
-    width: 90%;
-    margin-top: 20px;
-    margin-left: 20px;
-
+.submain>.pan::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #beb9b9;
+    border-radius: 25px;
+    margin-left: 3px;
 }
-.item{
-margin-left: 25px;
-width: 25vw;
- display: flex;
- justify-content: space-between;
+.submain .row1 {
+    margin-left: 30px;
+    display: grid;
+grid-template-columns: 60px 340px;
+grid-template-rows: repeat(4,.2fr);
+margin-top: 30px;
+font-size: larger;
+
 }
 .item a{
     text-decoration-line: none;
     color:#e82084;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 100px;
 }
-
-.item>input{
-    margin-left: 20px;
+.item {
+     margin-left: 32px;
+     margin-top: 22px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .row1 input {
-    padding-left: 5px;
     position: absolute;
-    height: 25px;
-    width: 90%;
+    width: 19vw;
+    height: 2.5vh;
+    padding: 0 35px;
     border: none;
     outline: none;
     font-size: 16px;
-    border-bottom: 2px solid #ccc;
-    border-top: 2px solid transparent;
+    border-bottom: 3px solid #aba5a5;
+    border-top: 4px solid transparent;
     transition: all 0.2s ease;
     background: transparent;
-
-}
-.row1{
-    color: black;
-    border: none;
 }
 .row1 i{
-    position: relative;
     font-size: 20px;
+    color: #585757;
 }
-.but{
-    margin-top: 30px;
-    justify-content: center;
-    display: flex;
-    height: 40px;
+.img{
+    width: 430px;
+    height: 215px;
+    border-radius: 5px;
 }
-.but button{
+.but>button{
     border-radius: 5px;
     background-color: #898787;
-    color: white;
     border: none;
-    width: 28vw;
+    color: white;
+    width: 23.8vw;
+    padding: 15px 30px 15px 30px;
+    margin: 25px 40px 10px 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 .pa{
-   display: flex;
-   margin-top: 5vw;
-   justify-content: center;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .pa a{
-    margin-left: 5px;
     text-decoration-line: none;
     color: #e82084;
-  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 input{
     border: none;
     text-decoration: none;
+    margin-left: 2px;
 }
 
 @media (min-width:270px) and (max-width:420px) {
