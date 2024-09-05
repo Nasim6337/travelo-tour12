@@ -12,6 +12,7 @@
     width: 5vw;
 }
 .main_container{
+    border: 2px solid red;
     width: 90vw;
     height: 15vh;
     display: flex;
@@ -62,6 +63,17 @@
     background-color: red;
 }
 
+.xbut{
+    display: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+        color: red;
+        cursor: pointer;
+}
+
 
 @media (min-width:270px) and (max-width:420px){
     .logo img{
@@ -89,12 +101,18 @@
     }
 
 .menu{
-    z-index: 15;
     display: flex;
     position: absolute;
     top: 5vh;
     left: 75vw;
 
+}
+
+.xbut{
+    top: 30px;
+    left: 20px;
+    display: block;
+    position:absolute;
 }
 
 }
@@ -106,6 +124,8 @@
             <img src="/source/logo.png" alt="">
         </div>
         <div class="main_container">
+            <button class="xbut">X</button>
+
             <div class="sub_container home">
             <a href="#" class="header_link ">Home</a>     
     
@@ -113,26 +133,26 @@
     
     
             <div class="sub_container">
-                <a href="/destination/destination.html" class="header_link">Destination</a>
+                <a href="#" class="header_link">Destination</a>
     
             </div>
     
     
     
             <div class="sub_container">
-                <a href="/activity/activity.html" class="header_link">Activities</a>
+                <a href="#" class="header_link">Activities</a>
     
             </div>
     
     
             <div class="sub_container">
-                <a href="/packages/packages.html" class="header_link">Packages</a>
+                <a href="#" class="header_link">Packages</a>
     
             </div>
     
     
             <div class="sub_container">
-                <a href="/about/about.html" class="header_link">About Us</a>
+                <a href="#" class="header_link">About Us</a>
     
             </div>
     
@@ -150,18 +170,14 @@
     
   <script>
     const container=document.querySelector(".main_container");
+    const off=document.querySelector('.xbut')
     const bt=document.querySelector('.menu')
-    bt.addEventListener('dblclick',()=>{
-        Object.assign(container.style,{
-           display:'inline-block',
-
-        })
+    bt.addEventListener('click',()=>{
+        container.style.display='inline-block'
     })
 
-    bt.addEventListener('click',()=>{
-        Object.assign(container.style,{
-            display:'none'
-        })
+    off.addEventListener('click',()=>{
+      container.style.display='none'
     })
     
 
