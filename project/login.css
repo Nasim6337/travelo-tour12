@@ -138,12 +138,15 @@ width: 80vw;
 
  .row1 {
     height: 30px;
-    width: 80%;
+    width: 100%;
 }
 
 .item{
 margin-top: 25px;
-width:90%;
+width:100%;
+}
+.item a{
+    margin-left:-10px;
 }
 .but button{
     width: 70vw;
