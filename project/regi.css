@@ -95,3 +95,33 @@ font-size: larger;
   text-decoration-line: none;
   color: crimson;
 }
+
+@media only screen and (min-width: 290px) and (max-width: 420px){
+      .main{
+          width: 85.5vw;
+          height: 85vh;
+      }
+      .main img{
+           width: 85.4vw;
+           height: 25vh;
+      }
+      .bmain{
+        width: 77.8vw;
+        height: 54vh;
+      }
+      .reg{
+        margin-top: -22px;
+      }
+      .infild input{
+          width: 55vw;
+          height: 4vh;
+         margin-bottom: 6px;
+    }
+    .inp_button input{
+        width: 73vw;
+      }
+      .login-signup{
+        margin-left: -27px;
+        margin-top: -0.5px;
+      }
+}
